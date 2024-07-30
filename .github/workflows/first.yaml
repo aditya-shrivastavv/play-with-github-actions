@@ -5,10 +5,15 @@ jobs:
     firstJob:
         runs-on: ubuntu-latest
         steps:
+            -   name: Checkout code
+                uses: actions/checkout@v4
+
             -   name: Prints welcome message
                 run: echo "Welcome welcome welcome"
+
             -   name: List files
                 run: ls
+
             -   name: Read file
                 run: cat README.md
             
